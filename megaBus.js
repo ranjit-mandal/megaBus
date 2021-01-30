@@ -17,34 +17,13 @@ if(isIncrease == true){
 if(isIncrease == false && firstClassAmount > 0){
     firstClassNewAmount = firstClassAmount - 1;
 }
-
     firstClassRate.value = firstClassNewAmount;
-    // const firstClassTotal = firstClassNewAmount * 150;
-    // document.getElementById('subtotal').innerText = firstClassTotal;
 }
 
-//economy part start
-/*
-document.getElementById('economyIncrease').addEventListener('click', function(){
-const economyRate = document.getElementById('economyPrice');
-const economyAmount = parseInt(economyRate.value);
-const economyNewAmount = economyAmount + 1;
-economyRate.value = economyNewAmount;
-});
-
-document.getElementById('economyDecrease').addEventListener('click', function(){
-    const economyRate = document.getElementById('economyPrice');
-    const economyAmount = parseInt(economyRate.value);
-    const economyNewAmount = economyAmount - 1;
-    economyRate.value = economyNewAmount;
-});
-*/
-//economy part start
 document.getElementById('economyIncrease').addEventListener('click', function(){
     busCounter(true)        
     });
-    
-    document.getElementById('economyDecrease').addEventListener('click', function(){
+document.getElementById('economyDecrease').addEventListener('click', function(){
         busCounter(false)       
     });
     
